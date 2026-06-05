@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #0057b8;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #0057b8;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+    line-height: 1.8;
+    color: #555;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.boton-enlace {
+    display: inline-block;
+    text-decoration: none;
+    background: #0057b8;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.boton-enlace:hover {
+    transform: scale(1.05);
+    background: #004494;
+}
+
+.info {
+    background: white;
+    padding: 70px 10%;
+}
+
+.alternado {
+    background: #f8f9fa;
+}
+
+.info-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.texto {
+    flex: 1;
+    min-width: 300px;
+}
+
+.texto h2 {
+    color: #0057b8;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.texto p {
+    line-height: 1.8;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.imagen {
+    flex: 1;
+    min-width: 300px;
+}
+
+.imagen img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* --- ESTILOS PARA LOS FORMULARIOS --- */
+
+.contenedor-formulario {
+    display: flex;
+    max-width: 1100px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    flex-wrap: wrap;
+}
+
+.formulario-seccion {
+    flex: 1;
+    padding: 40px;
+    min-width: 320px;
+}
+
+.formulario-seccion h2 {
+    color: #0057b8;
+    margin-bottom: 10px;
+}
+
+.formulario-seccion p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+}
+
+.campo input[type="text"],
+.campo input[type="number"],
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.checkbox-grupo label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+fieldset.grupo-paso {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    background: #fdfdfd;
+}
+
+fieldset.grupo-paso legend {
+    font-weight: bold;
+    color: #0057b8;
+    padding: 0 10px;
+    font-size: 1.1rem;
+}
+
+.aclaracion-formulario {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+/* Estilos de la caja interactiva para cargar el CV */
+.campo-cv label {
+    margin-bottom: 10px;
+}
+
+.input-archivo-personalizado {
+    position: relative;
+    border: 2px dashed #0057b8;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background: #f8fbff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input-archivo-personalizado:hover {
+    background: #eef5ff;
+    border-color: #004494;
+}
+
+.input-archivo-personalizado input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.ayuda-archivo {
+    font-size: 0.95rem;
+    color: #0057b8;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Sección lateral derecha */
+.formulario-imagen {
+    flex: 1;
+    background: #f8f9fa;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.formulario-imagen img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.frase-motivadora {
+    font-style: italic;
+    color: #555;
+    text-align: center;
+    border-left: 4px solid #0057b8;
+    padding-left: 15px;
+    max-width: 400px;
+}
+
+.volver-inicio {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.volver-inicio .boton-enlace {
+    background: #555;
+}
+
+.volver-inicio .boton-enlace:hover {
+    background: #333;
+}
+
+@media(max-width:768px){
+    .info-contenido {
+        flex-direction: column;
+    }
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    .contenedor-formulario {
+        flex-direction: column;
+    }
+}
+/* --- ESTILOS DE BOTONES EN EL FORMULARIO --- */
+.boton-personalizado {
+    display: inline-block;
+    text-decoration: none;
+    background: #0057b8;
+    color: white !important;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    text-align: center;
+    width: 100%; /* El botón de enviar ocupa todo el ancho */
+}
+
+.boton-personalizado:hover {
+    transform: scale(1.05);
+    background: #004494;
+}
+
+/* Estilo específico para el contenedor y botón Volver al Inicio */
+.contenedor-volver {
+    text-align: center;
+    margin: 30px 0 60px 0;
+}
+
+.contenedor-volver .btn-regreso {
+    background: #555555;
+    width: auto; /* El botón de volver no ocupa todo el ancho */
+}
+
+.contenedor-volver .btn-regreso:hover {
+    background: #333333;
+}

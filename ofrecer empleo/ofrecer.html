@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofrecer Empleo - World Work Way</title>
+    <link rel="stylesheet" href="inicio.css"> <link rel="stylesheet" href="ofrecer.css"> </head>
+<body>
+
+<header>
+    <h1>World Work Way</h1>
+    <p>Publicá tu oferta laboral y encontrá el talento que buscás.</p>
+</header>
+
+<main class="contenedor-formulario">
+    <div class="form-tarjeta">
+        <h2>Formulario de Oferta Laboral</h2>
+        <p class="subtitulo">Completá los datos para conectar con trabajadores de la zona.</p>
+        
+        <form id="formEmpleo">
+            <div class="grupo-campo">
+                <label for="empresa">Nombre de la Empresa o Empleador</label>
+                <input type="text" id="empresa" required placeholder="Ej. Panadería San José o Particular">
+            </div>
+
+            <div class="grupo-campo">
+                <label for="puesto">Puesto a Cubrir</label>
+                <input type="text" id="puesto" required placeholder="Ej. Repositor, Administrativo, Chofer">
+            </div>
+
+            <div class="grupo-campo">
+                <label for="zona">Zona / Barrio del empleo</label>
+                <input type="text" id="zona" required placeholder="Ej. Alta Córdoba, Palermo, etc.">
+            </div>
+
+            <div class="grupo-campo">
+                <label for="descripcion">Descripción del empleo y requisitos</label>
+                <textarea id="descripcion" rows="4" required placeholder="Contanos qué tareas se realizarán y qué experiencia valoran..."></textarea>
+            </div>
+
+            <div class="botones-form">
+                <button type="submit" class="boton-personalizado">Publicar Oferta</button>
+                <a href="../inicio.html" class="boton-personalizado btn-regreso">Volver al Inicio</a>
+            </div>
+        </form>
+    </div>
+</main>
+
+<script src="ofrecer.js"></script>
+</body>
+</html>

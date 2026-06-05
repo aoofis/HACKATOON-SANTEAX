@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postulate - World Work Way</title>
+    <link rel="stylesheet" href="buscar.css">
+</head>
+<body>
+
+<header>
+    <h1>Formulario de Búsqueda de Empleo</h1>
+    <p>Completá tus datos para conectarte con las mejores oportunidades laborales cerca de tu hogar.</p>
+</header>
+
+<main class="contenedor-formulario">
+    <section class="formulario-seccion">
+        <h2>Tu Perfil Laboral</h2>
+        <p>Este formulario nos ayuda a conocer tu trayectoria y tus necesidades para sugerirte empleos adecuados.</p>
+
+        <form id="formBuscarEmpleo">
+            <fieldset class="grupo-paso">
+                <legend>1. Datos Personales</legend>
+                
+                <div class="campo">
+                    <label for="nombreCompleto">Nombre y Apellido:</label>
+                    <input type="text" id="nombreCompleto" placeholder="Ej. Juan Pérez" required>
+                </div>
+
+                <div class="campo">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" min="18" max="100" placeholder="Ej. 52" required>
+                </div>
+
+                <div class="campo">
+                    <label for="barrio">Barrio / Localidad de residencia:</label>
+                    <input type="text" id="barrio" placeholder="Ej. Alta Córdoba" required>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo-paso">
+                <legend>2. Tu Experiencia y Preferencias</legend>
+
+                <div class="campo">
+                    <label for="rubroInteres">¿En qué rubros tenés experiencia o te gustaría trabajar?</label>
+                    <select id="rubroInteres" required>
+                        <option value="">Seleccioná una opción...</option>
+                        <option value="admin">Administración / Oficina / Comercio</option>
+                        <option value="oficios">Oficios / Mantenimiento / Producción</option>
+                        <option value="salud">Cuidado de personas / Salud</option>
+                        <option value="atencion">Atención al Cliente / Recepción</option>
+                        <option value="otro">Otros Oficios</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="resumenExperiencia">Breve resumen de tu experiencia laboral:</label>
+                    <textarea id="resumenExperiencia" rows="4" placeholder="Contanos brevemente en qué trabajaste anteriormente..." required></textarea>
+                </div>
+
+                <div class="campo">
+                    <label for="disponibilidad">Disponibilidad horaria:</label>
+                    <select id="disponibilidad" required>
+                        <option value="full">Full-time (Jornada completa)</option>
+                        <option value="part">Part-time (Media jornada)</option>
+                        <option value="flexible">Flexible / Por horas</option>
+                    </select>
+                </div>
+
+                <div class="campo campo-cv">
+                    <label for="archivoCv">Cargar tu CV (Opcional, formato PDF):</label>
+                    <div class="input-archivo-personalizado">
+                        <input type="file" id="archivoCv" accept=".pdf">
+                        <p class="ayuda-archivo">📁 Hacé clic para seleccionar tu archivo PDF (Tamaño máximo recomendado: 5MB)</p>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo-paso">
+                <legend>3. Accesibilidad y Movilidad</legend>
+                <p class="aclaracion-formulario">Esta información nos ayuda a filtrar lugares de trabajo adaptados.</p>
+
+                <div class="campo checkbox-grupo">
+                    <label>
+                        <input type="checkbox" id="requiereRampa"> Requiero espacios con accesibilidad motriz (Rampas, ascensores, planta baja).
+                    </label>
+                </div>
+
+                <div class="campo checkbox-grupo">
+                    <label>
+                        <input type="checkbox" id="transporteCercano"> Necesito transporte público a menos de 3 cuadras.
+                    </label>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="boton-personalizado">Registrar mi Perfil y Buscar</button>
+        </form>
+    </section>
+
+    <section class="formulario-imagen">
+        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600" alt="Profesional sonriendo">
+        <blockquote class="frase-motivadora">
+            "Valoramos tu compromiso y los años de aprendizaje que tenés para aportar."
+        </blockquote>
+    </section>
+</main>
+
+
+<div class="contenedor-volver">
+    <a href="../inicio.html" class="boton-personalizado btn-regreso">← Volver al Inicio</a>
+</div>
+
+<script src="buscar.js"></script>
+</body>
+</html>
