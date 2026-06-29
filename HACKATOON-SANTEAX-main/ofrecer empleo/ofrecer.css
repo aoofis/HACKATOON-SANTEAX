@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #1e2530; /* Fondo oscuro unificado */
+    color: #ffffff;      /* Letras blancas */
+}
+
+header {
+    background: #1e2530; 
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    color: #c5a059;      /* Dorado apagado */
+}
+
+header p {
+    color: #ffffff;
+}
+
+/* --- ESTRUCTURA DE DOS COLUMNAS REPLICADA DE BUSCAR --- */
+.contenedor-formulario {
+    display: flex;
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #252d3a; /* Caja gris azulada con relieve claro */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    flex-wrap: wrap;
+}
+
+.formulario-seccion {
+    flex: 1;
+    padding: 40px;
+    min-width: 320px;
+}
+
+.formulario-seccion h2 {
+    color: #c5a059;      /* Título dorado apagado */
+    margin-bottom: 10px;
+}
+
+.formulario-seccion p {
+    color: #ffffff;      
+    margin-bottom: 30px;
+}
+
+/* --- INPUTS Y SECCIONES DEL FORMULARIO --- */
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ffffff;      
+}
+
+.campo input[type="text"],
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #444444; 
+    background: #1e2530;       /* Fondo interno oscuro */
+    color: #ffffff;            /* Letra de escritura blanca */
+    border-radius: 6px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.campo input:focus, 
+.campo select:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: #c5a059;     
+    box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.2);
+}
+
+fieldset.grupo-paso {
+    border: 1px solid #444444; 
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    background: #1e2530;       
+}
+
+fieldset.grupo-paso legend {
+    font-weight: bold;
+    color: #c5a059;            
+    padding: 0 10px;
+    font-size: 1.1rem;
+}
+
+/* --- COLUMNA DERECHA --- */
+.formulario-imagen {
+    flex: 1;
+    background: #252d3a;       
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.formulario-imagen img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.frase-motivadora {
+    font-style: italic;
+    color: #ffffff;            
+    text-align: center;
+    border-left: 4px solid #c5a059; 
+    padding-left: 15px;
+    max-width: 400px;
+}
+
+/* --- DISEÑO DE LOS BOTONES --- */
+.boton-personalizado {
+    display: inline-block;
+    text-decoration: none;
+    background: #c5a059;      
+    color: #1e2530 !important; /* Texto oscuro para legibilidad */
+    border: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    text-align: center;
+    width: 100%; 
+    font-weight: bold;
+}
+
+.boton-personalizado:hover {
+    transform: scale(1.03);
+    background: #b38f4b;
+}
+
+.contenedor-volver {
+    text-align: center;
+    margin: 30px 0 60px 0;
+}
+
+.contenedor-volver .btn-regreso {
+    background: #444444;
+    color: #ffffff !important;
+    width: auto; 
+}
+
+.contenedor-volver .btn-regreso:hover {
+    background: #333333;
+}
+
+/* Ajuste Responsivo */
+@media(max-width:768px){
+    .contenedor-formulario {
+        flex-direction: column;
+    }
+}

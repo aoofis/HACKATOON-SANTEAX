@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #1e2530; /* Cambiado a fondo oscuro */
+    color: #ffffff;      /* Cambiado a letras blancas */
+}
+
+header {
+    background: #1e2530; /* Mantiene su estructura pero con fondo oscuro */
+    color: #ffffff;      /* Letras blancas */
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    color: #c5a059;      /* Título principal en dorado apagado */
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #c5a059;      /* Título en dorado apagado */
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+    line-height: 1.8;
+    color: #ffffff;      /* Letras blancas */
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+button {
+    background: #c5a059; /* Botón a juego con el dorado apagado */
+    color: #1e2530;      /* Letras oscuras para legibilidad */
+    border: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform:scale(1.05);
+}
+
+.info {
+    background: #1e2530; /* Fondo oscuro */
+    padding: 70px 10%;
+}
+
+.alternado {
+    background: #252d3a; /* Fondo un poco más claro para separar sección */
+}
+
+.info-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.texto {
+    flex: 1;
+    min-width: 300px;
+}
+
+.texto h2 {
+    color: #c5a059;      /* Título en dorado apagado */
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.texto p {
+    line-height: 1.8;
+    color: #ffffff;      /* Letras blancas */
+    font-size: 1.1rem;
+}
+
+.imagen {
+    flex: 1;
+    min-width: 300px;
+}
+
+.imagen img {
+    width: 75%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4); /* Sombra adaptada a fondo oscuro */
+}
+
+@media(max-width:768px) {
+    .info-contenido {
+        flex-direction: column;
+    }
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+}
+
+.boton-personalizado {
+    display: inline-block;
+    text-decoration: none;
+    background: #c5a059;
+    color: #1e2530 !important;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.boton-personalizado:hover {
+    transform: scale(1.05);
+}

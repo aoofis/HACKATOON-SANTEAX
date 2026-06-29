@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofrecer Empleo - World Work Way</title>
+    <link rel="stylesheet" href="ofrecer.css"> 
+</head>
+<body>
+
+<header>
+    <h1>World Work Way</h1>
+    <p>Publicá tu oferta laboral y encontrá el talento que buscás.</p>
+</header>
+
+<main class="contenedor-formulario">
+    <section class="formulario-seccion">
+        <h2>Formulario de Oferta Laboral</h2>
+        <p>Completá los datos detallados para conectar con trabajadores de la zona.</p>
+        
+        <form id="formEmpleo">
+            <fieldset class="grupo-paso">
+                <legend>1. Información del Empleador</legend>
+                
+                <div class="campo">
+                    <label for="empresa">Nombre de la Empresa o Empleador:</label>
+                    <input type="text" id="empresa" required placeholder="Ej. Panadería San José o Particular">
+                </div>
+
+                <div class="campo">
+                    <label for="contacto">Teléfono o Email de Contacto:</label>
+                    <input type="text" id="contacto" required placeholder="Ej. contacto@empresa.com o 351xxxxxxx">
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo-paso">
+                <legend>2. Detalles del Puesto</legend>
+
+                <div class="campo">
+                    <label for="puesto">Puesto a Cubrir:</label>
+                    <input type="text" id="puesto" required placeholder="Ej. Repositor, Administrativo, Chofer">
+                </div>
+
+                <div class="campo">
+                    <label for="jornada">Tipo de Jornada:</label>
+                    <select id="jornada" required>
+                        <option value="">Seleccioná una opción...</option>
+                        <option value="full">Full-time (Jornada completa)</option>
+                        <option value="part">Part-time (Media jornada)</option>
+                        <option value="flexible">Por horas / Temporario</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="zona">Zona / Barrio del empleo:</label>
+                    <input type="text" id="zona" required placeholder="Ej. Alta Córdoba, Palermo, etc.">
+                </div>
+
+                <div class="campo">
+                    <label for="sueldo">Remuneración / Sueldo estimado (Opcional):</label>
+                    <input type="text" id="sueldo" placeholder="Ej. A convenir, $150.000, etc.">
+                </div>
+
+                <div class="campo">
+                    <label for="descripcion">Descripción del empleo y requisitos:</label>
+                    <textarea id="descripcion" rows="4" required placeholder="Contanos qué tareas se realizarán y qué experiencia valoran..."></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo-paso">
+                <legend>3. Entorno de Trabajo</legend>
+                <div class="campo">
+                    <label for="accesibilidad">Condiciones de accesibilidad del espacio (Opcional):</label>
+                    <input type="text" id="accesibilidad" placeholder="Ej. Espacio con rampas, ascensor, planta baja, etc.">
+                </div>
+            </fieldset>
+
+            <button type="submit" class="boton-personalizado">Publicar Oferta</button>
+        </form>
+    </section>
+
+    <section class="formulario-imagen">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600" alt="Equipo de trabajo">
+        <blockquote class="frase-motivadora">
+            "Encontrá personal capacitado y comprometido a pocas cuadras de tu negocio o empresa."
+        </blockquote>
+    </section>
+</main>
+
+<div class="contenedor-volver">
+    <a href="../inicio.html" class="boton-personalizado btn-regreso">← Volver al Inicio</a>
+</div>
+
+<script src="ofrecer.js"></script>
+</body>
+</html>
